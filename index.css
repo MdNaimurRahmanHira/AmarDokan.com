@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all ease .2s;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+button.commonbtn {
+    outline: none;
+    margin-left: 20px;
+    padding: 5px;
+    background-color: var(--main-color);
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+}
+
+:root {
+    --main-color: #216ae6;
+    --font-family: Arial;
+    --background-color: rgb(252, 243, 232);
+}
+
+.container {
+    max-width: 1380px;
+    margin: auto;
+}
+
+/* top header contact box started from here  */
+.top-header {
+    background-color: var(--background-color);
+    width: 100%;
+}
+
+.mobile i {
+    border-right: 1px solid var(--main-color);
+    padding-right: 5px;
+}
+
+.email i {
+    border-right: 1px solid var(--main-color);
+    padding-right: 5px;
+}
+
+.email a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.mobile a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.Top-contact-box {
+    display: flex;
+    font-size: 12px;
+    font-family: var(--font-family);
+
+    padding: 10px 0px;
+    justify-content: space-between;
+
+}
+
+/* top header contact box Ended here  */
+
+
+/* logo part started from here  */
+#header {
+    position: relative;
+    background-color: var(--main-color);
+}
+
+.logo-box-background {
+    position: sticky;
+}
+
+.logo-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    height: 100px;
+    align-items: center;
+
+}
+
+.logo {
+    font-family: 'Teko', sans-serif;
+    color: white;
+    font-size: 45px;
+}
+
+.search-box {
+    background-color: var(--background-color);
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 29px;
+    box-shadow: rgb(83 82 82) 0px 0px 10px;
+    transition: .3s;
+    width: 310px;
+}
+
+.search-box:hover {
+    box-shadow: rgb(49 49 49) 0px 0px 20px;
+}
+
+.search-box input {
+    background: none;
+    border: none;
+    outline: none;
+    font-family: arial;
+    vertical-align: middle;
+    font-size: 15px;
+    width: 245px;
+}
+
+.search-box i {
+    color: var(--main-color);
+    cursor: pointer;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.member a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid white;
+    padding: 10px;
+
+}
+
+.member a:first-child {
+    margin-right: 40px;
+}
+
+.member i {
+    padding-right: 5px;
+}
+
+/* logo part ends here  */
+
+
+
+
+/* navbar start from  here */
+#navbar {
+    background-color: var(--main-color);
+    padding-bottom: 10px;
+
+}
+
+
+
+#navbar .menu>ul {
+    display: flex;
+    position: relative;
+}
+
+
+.menu ul>li a i {
+    padding-right: 10px;
+}
+
+.menu a {
+    color: white;
+}
+
+.menu>ul>li>a {
+    padding: 10px;
+    border: 1px solid transparent;
+}
+.menu>ul>li:hover >a{
+    border: 1px solid white;
+}
+.menu ul li:hover >a{
+    color: black
+}
+.menu ul ul {
+    position: absolute;
+    background-color: var(--main-color);
+    top: 100%;
+    left: 0px;
+    transition:  .4s;
+    box-shadow: 0px 0px 10px #000000;
+    visibility: hidden;
+    
+
+}
+.menu ul ul>li ul{
+    padding: 0px 10px;
+    transition: .4s;
+}
+
+.menu>ul>li:hover>ul {
+    visibility: visible;
+   
+}
+.menu ul ul >li:hover>ul{
+    visibility: visible;
+}
+.menu ul ul ul {
+    position: absolute;
+    top: 20px;
+    background-color: var(--main-color);
+    left: 100%;
+
+}
+
+.menu ul ul>li a {
+    padding: 10px 5px;
+}
+
+/* product part start */
+.mobile >h1{
+    font-size: 35px;
+    padding: 10px 0px;
+}
+.cardwrpr{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    
+    background-color: var(--background-color);
+    margin: 10px;
+    width: 300px;
+    height: 350px;
+    
+}
+.productimg{
+    text-align: center;
+    padding: 20px;
+}
+.card h1,p{
+    padding-left: 20px;
+}
+
+
+/* product part end */

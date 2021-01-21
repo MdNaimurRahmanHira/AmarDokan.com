@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #216ae6;
+    --font-family: Arial;
+    --background-color: rgb(252, 243, 232);
+}
+body{
+    background: linear-gradient(#216ae6,black) no-repeat ;
+    height:
+}
+
+.logo {
+    font-family: 'Teko', sans-serif;
+    color: white;
+}
